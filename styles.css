@@ -1,0 +1,121 @@
+body {
+  font-family: 'Creepster', cursive;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 200vh; /* Increase height for more scrolling */
+  overflow-y: scroll;
+  background: none; /* 背景の白を取り除く */
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  background-color: rgba(17, 17, 17, 0.7); /* ヘッダーの背景色を半透明の黒に */
+  padding: 20px 0;
+  border-bottom: 2px solid #444; /* 灰色のボーダー */
+  text-align: center;
+  position: relative; /* 位置を相対的に設定 */
+  z-index: 1; /* 前面に表示 */
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  color: #e74c3c; /* タイトルの色を赤に */
+  font-size: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #e74c3c; /* ナビゲーションリンクの色を赤に */
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c0392b; /* ホバー時の色を暗い赤に */
+}
+
+main {
+  padding: 20px;
+  position: relative; /* 位置を相対的に設定 */
+  z-index: 1; /* 前面に表示 */
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.7); /* 背景色を半透明の黒に */
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px; /* パディングを追加 */
+}
+
+.intro h1 {
+  font-size: 3em; /* フォントサイズを大きく */
+}
+
+.intro h2 {
+  color: #e74c3c; /* 見出しの色を赤に */
+  font-size: 2.5em;
+}
+
+.intro p {
+  color: #ccc; /* テキストの色を灰色に */
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.intro .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #e74c3c; /* ボタンの背景色を赤に */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px; /* 角丸を強調 */
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 影を追加 */
+  transition: background-color 0.3s;
+}
+
+.intro .btn:hover {
+  background-color: #c0392b; /* ホバー時の背景色を暗い赤に */
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 10px;
+}
